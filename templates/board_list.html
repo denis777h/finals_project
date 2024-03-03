@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Public Board</title>
+</head>
+<body>
+    <h1>Создать обявление</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        
+        <label for="date_public_boards">Date:</label><br>
+        <input type="date" id="date_public_boards" name="date_public_boards"><br>
+        
+        <label for="auto_public">Auto Public:</label><br>
+        <input type="checkbox" id="auto_public" name="auto_public"><br>
+        
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content"></textarea><br>
+        
+        <label for="interest">Interest:</label><br>
+        <input type="checkbox" id="interest" name="interest"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
